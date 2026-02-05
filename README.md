@@ -69,22 +69,18 @@ We will give teams ~5 minutes after the 2-hour analysis period to submit their c
 
 ## Presentation Guidelines
 * Present using any format: Quarto doc, slides, visualizations, etc: Your chosen presentation media will be projected by an SSMU member through your Google Drive
-Presentations will be recorded during the event
-Recordings will be sent to you and your teammates a few days following the event
-SSMU would love to share your analysis with QSIDE and the original dataset creators! 
-The dataset and study were created by previous undergraduate students at Williams College in 2023.
-If you would like to opt into this opportunity, please let us know!
-Presentation order will be randomized, but let us know beforehand if your team has a preference for going first, last, or in the middle
+* Presentations will be recorded during the event.
+* Recordings will be sent to you and your teammates a few days following the event
+* SSMU would love to share your analysis with QSIDE and the original dataset creators! The dataset and study were created by previous undergraduate students at Williams College in 2023. If you would like to opt into this opportunity, please let us know!
+* Presentation order will be randomized, but let us know beforehand if your team has a preference for going first, last, or in the middle
 ## Judging
-Winners will be announced on Sunday, February 15
-Presentations will be judged by the story your analysis tells, more than by the level of statistics your team members used.
-This will account for differing experience levels across competitors
-A fair evaluation will be justified by multiple people deciding on competition winners.
-Insert rubric here?!?! ________
-## Post-Competition
-Duke’s StatSci Majors Union will be hosting Data Mini #2 from Feb. 28 - Mar. 1
-This competition will be a little different: ________
-In addition, the Duke Department of Statistical Science will host a larger competition, DataFest, from March 20-22, 2026
+* Winners will be announced on Sunday, February 15
+* Presentations will be judged by the story your analysis tells, more than by the level of statistics your team members used. This will account for differing experience levels across competitors
+* A fair evaluation will be justified by multiple people deciding on competition winners.
+## Other Competitions from SSMU
+1) Duke’s StatSci Majors Union will be hosting Data Mini #2 from Feb. 28 - Mar. 1. This competition will be a little different: There will be a one-hour information session on Feb. 27th from 5:30-6:30 pm in Old Chem 001. From there, you and your team will have until Mar. 1 at 11:59 pm to submit materials and a video recording of findings to a Google Drive folder. Please contact Chelsea Nguyen (chelsea.nguyen@duke.edu) if you have any questions!
+2) In addition, ASA DataFest 2026 at Duke, organized by the Department of Statistical Science, will take place in Perkins Library on Duke University West Campus, Friday, March 20, through Sunday, March 22. Similar to Data Minis, DataFest is a data analysis competition where teams of up to five students attack a large, complex, and surprise data set over a weekend. Please reach out to Dr. Alexander Fisher (alexander.fisher@duke.edu) with any questions.
+
 
 ## Dataset Acknowledgment
 The Student-Teacher Race-Match dataset and study were created by then-undergraduate students Anchal Bhaskar, Kayla Chang, Iman Najib, Olivia Thornton, Jules Tucher, and Régan Schwartz under the guidance of Professor Chad M. Topaz at Williams College.
