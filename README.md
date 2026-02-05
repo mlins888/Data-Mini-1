@@ -1,5 +1,3 @@
-Data Mini #1 Competition README.md 
-
 # Data-Mini-1
 Welcome to Data Mini #1! You and your teammates will have 2 hours to explore and prepare a presentation about your data analysis. The hour after will be spent presenting your findings.
 
