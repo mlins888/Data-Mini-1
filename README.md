@@ -7,7 +7,7 @@ This Git repository contains this `README` file and the dataset in both `CSV` an
 1. Fork this repository
 2. Load the data from `data/texasdata.csv` or `data/texasdata.rds`
 3. Analyze the dataset and prepare a presentation of your findings
-4. AFTER ANALYZING TIMEFRAME: Submit your presentation slides to the Google Drive so we can screenshare it.
+4. AFTER ANALYZING TIMEFRAME: Submit your presentation slides **that include the forked repository link** to the Google Drive so we can screenshare it.
 Please do not attempt to push changes to this repository - it is read-only for participants.
 
 ## Data Dictionary
@@ -64,7 +64,7 @@ Same-race teachers improve academic outcomes for minoritized students, yet most 
 
 ## Submission Requirements
 We will give teams ~5 minutes after the 2-hour analysis period to submit their code notebook (QMD, PDF, Jupyter, etc.) and presentation media (slides, PDF, etc.) to the Google Drive folder
-* You and your teammates will have received an email from _______@duke.edu near the beginning of the competition start
+* You and your teammates will have received an email from _____@duke.edu near the beginning of the competition start
 * Your team’s Google Drive folder contents will not be accessible to view, comment, or edit by any other team
 
 ## Presentation Guidelines
