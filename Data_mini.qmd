@@ -1,26 +1,108 @@
 ---
 title: "Data Mini"
-format: revealjs
+format: pptx
 editor: source
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
 
 ```{r}
-1 + 1
+#| label: load packages
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+texasdata <- read.csv("texasdata.csv")
+glimpse(texasdata)
 ```
-
-You can add options to executable code like this
 
 ```{r}
 #| echo: false
-2 * 2
+#| label: analyze teachers and students by race
+
+texaswhite <- texasdata |>
+  filter(race == "white")
+
+ggplot(data = texaswhite, aes(x = student_frac, y = teacher_frac)) +
+  geom_point() +
+  geom_smooth() + 
+  labs (
+    title = "Proportion of white teachers vs. white students"
+  )
+
+
+texasblack <- texasdata |>
+  filter(race == "Black")
+
+ggplot(data = texasblack, aes(x = student_frac, y = teacher_frac)) +
+  geom_point() +
+  geom_smooth() + 
+  labs (
+    title = "Proportion of black teachers vs. black students"
+  )
+
+
+texashispanic <- texasdata |>
+  filter(race == "Hispanic")
+
+ggplot(data = texashispanic, aes(x = student_frac, y = teacher_frac)) +
+  geom_point() +
+  geom_smooth() + 
+  labs (
+    title = "Proportion of hispanic teachers vs. hispanic students"
+  )
+
+```
+```{r}
+#| label: compare race represenation of students and teachers by region
+
+gap_data <- texasdata %>%
+  mutate(region = factor(region)) %>% 
+  group_by(region, race) %>%
+  summarize(
+    avg_student_frac = mean(student_frac, na.rm = TRUE),
+    avg_teacher_frac = mean(teacher_frac, na.rm = TRUE),
+    representation_gap = avg_teacher_frac - avg_student_frac,
+    .groups = "drop"
+  )
+
+ggplot(gap_data, aes(x = race, y = representation_gap, fill = region)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs(
+    title = "Teacher–Student Representation Gap by Race and Region",
+    x = "Race/Ethnicity",
+    y = "Teacher Share − Student Share",
+    fill = "Region"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+```{r}
+#| label: compare race represenation of students and teachers by location type
+#| 
+gap_data <- texasdata %>%
+  group_by(locationType, race) %>%
+  summarize(
+    avg_student_frac = mean(student_frac, na.rm = TRUE),
+    avg_teacher_frac = mean(teacher_frac, na.rm = TRUE),
+    representation_gap = avg_teacher_frac - avg_student_frac,
+    .groups = "drop"
+  )
+
+ggplot(gap_data, aes(x = race, y = representation_gap, fill = locationType)) +
+  geom_col(position = "dodge") +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  labs(
+    title = "Teacher–Student Representation Gap by Race and Location Type",
+    x = "Race/Ethnicity",
+    y = "Teacher Share − Student Share",
+    fill = "Location Type"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+
+
+
