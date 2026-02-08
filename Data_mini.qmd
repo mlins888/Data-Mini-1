@@ -1,7 +1,7 @@
 ---
 title: "Data Mini"
-format: html
-editor: visual
+format: revealjs
+editor: source
 ---
 
 ## Quarto
